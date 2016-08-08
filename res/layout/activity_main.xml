@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    
+	<RelativeLayout
+	    android:id="@+id/rl_top"
+	    android:layout_width="match_parent"
+	    android:layout_height="250dp"
+	    
+	    android:background="@drawable/bg_lanuch" >
+
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:src="@drawable/adbutton_makeup_1_wantu" />
+        
+	    <TextView 
+	        android:id="@+id/title_wantu"
+	        android:layout_width="70dp"
+	        android:layout_height="30dp"
+	        android:text=" 玩图"
+	        android:textColor="#ffffff"
+	        android:textSize="30dp"
+	        android:textStyle="bold"
+	        android:layout_toRightOf="@+id/imageView1"/>
+	    
+	    <ImageView
+	        android:id="@+id/imageView2"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:src="@drawable/draw" />
+
+	    <ImageView
+	        android:id="@+id/imageView3"
+	        android:layout_width="100dp"
+	        android:layout_height="160dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:paddingTop="10dp"
+	        android:src="@drawable/center" />
+	    
+    </RelativeLayout>
+	
+	<RelativeLayout 
+	    android:id="@+id/rl_down"
+	    android:layout_width="match_parent"
+	    android:layout_height="250dp"
+	    android:layout_below="@+id/rl_top"
+	    android:background="#e8dedf">
+	    
+	    <ImageView 
+	        android:id="@+id/img1"
+	        android:layout_width="100dp"
+	        android:layout_height="100dp"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentLeft="true"
+	        android:paddingTop="15dp"
+	        android:paddingLeft="15dp"
+	        android:src="@drawable/btn_main_collage"/>
+	    
+	    <ImageView 
+	        android:id="@+id/img2"
+	        android:layout_width="100dp"
+	        android:layout_height="100dp"
+	        android:paddingTop="15dp"
+	        android:paddingLeft="15dp"
+	        android:layout_toRightOf="@+id/img1"
+	        android:src="@drawable/btn_main_tietie"/>
+	    
+	    <ImageView 
+	        android:id="@+id/img3"
+	        android:layout_width="100dp"
+	        android:layout_height="100dp"
+	        android:paddingTop="15dp"
+	        android:paddingLeft="15dp"
+	        android:layout_toRightOf="@+id/img2"
+	        android:src="@drawable/btn_main_proedit"/>
+	    
+	    <ImageView
+	        android:id="@+id/img4"
+	        android:layout_width="100dp"
+	        android:layout_height="100dp"
+	        android:paddingTop="15dp"
+	        android:paddingLeft="15dp"
+	        android:src="@drawable/btn_main_camera"
+	        android:layout_below="@+id/img1"/>
+	    
+	    <ImageView
+	        android:id="@+id/img5"
+	        android:layout_width="100dp"
+	        android:layout_height="100dp"
+	        android:paddingTop="15dp"
+	        android:paddingLeft="15dp"
+	        android:src="@drawable/btn_main_prisma"
+	        android:layout_below="@+id/img1"
+	        android:layout_toRightOf="@+id/img4"/>
+	    
+	    <ImageView
+	        android:id="@+id/img6"
+	        android:layout_width="100dp"
+	        android:layout_height="100dp"
+	        android:paddingTop="15dp"
+	        android:paddingLeft="15dp"
+	        android:src="@drawable/wantu_crazy"
+	        android:layout_below="@+id/img1"
+	        android:layout_toRightOf="@+id/img5"/>
+	</RelativeLayout>
+
+</RelativeLayout>
